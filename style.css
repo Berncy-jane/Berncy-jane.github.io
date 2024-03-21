@@ -1,0 +1,692 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background: url(images/santorini.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    
+}
+.no-banner{
+    color: #000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
+}
+.nav-links{
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+}
+.nav-links:hover{
+    border-bottom: 2px solid #fff;
+}
+.logo{
+    color: #000;
+}
+.menu{
+    display: flex;
+}
+.menu>li{
+    list-style: none;
+    margin-right: 20px;
+    color: #000;
+
+}
+.banner-text{
+    width: 450px;
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-10%,-10%);
+}
+.about-us{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container{
+    height: 400px;
+    width: 90%; 
+    display: flex;
+    justify-content: space-between;
+
+}
+.about-text{
+    height: 100%;
+    width: 40%;
+}
+.about-images{
+    height: 100%;
+    width: 52%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.image-1,
+.image-2{
+    height: 85%;
+    width: 260px;
+    object-fit: contain;
+}
+.about-img{
+    width: 100%;
+    height: 100%;
+}
+.image-1{
+    margin-top: 20px;
+}
+.image-2{
+    margin-top: 50px;
+}
+.more-btn{
+    height: 40px;
+    width: 120px;
+    background-color: orange;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+.about-header{
+    font-size: 33px;
+    padding: 5px;
+}
+.about{
+    font-family: "Nunito", sans-serif;
+
+}
+.more-btn{
+    margin-top: 50px;
+}
+.ad-1{
+    min-height: 100vh;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.ad-container{
+    width: 90%;
+    height: 100%;
+}
+.ad-header{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.add-header-text{
+    width: 450px;
+}
+.add-header-text h3{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.add-header-text p{
+    font-family: "Nunito", sans-serif;
+    font-size: 16px; 
+}
+.ads{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.ad{
+    min-height: 500px;
+    width: 350px;
+}
+.ad-image{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+
+}
+.image-ad{
+    height: 100%;
+    width: 100%;
+}
+.ad-price{
+    height: 50px;
+    width: 70px;
+    background-color: aqua;
+    position: relative;
+    top: 0;
+}
+.ad-text{
+    width: 300px;
+}
+.ad-text h3{
+    font-size: 28px;
+}
+.ad-text p{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: grey;
+}
+.review-section{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(247, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.review-container{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.reviews{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    
+}
+.reviews h3{
+    font-size: 45px;
+}
+.user{
+    margin-top: 40px;
+    margin-bottom:  20px;
+}
+
+.user-img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.user-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.user .title{
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+.user .name {
+    color: orange;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.comment{
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px;
+}
+.accordion{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-header{
+    
+    width: 90%;
+    padding: 2px;
+}
+.accordion-header h2{
+    font-size: 45px;
+}
+.accordion .contentbox{
+    position: relative;
+    margin: 10px 20px;
+    font-size: 20px;
+}
+.accordion .contentbox .label{
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.accordion .contentbox.active .label{
+    background-color: orange;
+}
+.accordion .contentbox .label::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+
+}
+.accordion .contentbox.active .label::before {
+    content: "-";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+
+}
+.accordion .contentbox .accordion-content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    overflow-y: auto;
+}
+.accordion .contentbox.active .accordion-content{
+    height: 155px;
+    padding: 10px;
+}
+.blog-ads{
+    width: 100%;
+    min-height: 100vh;
+}
+.section-header{
+    padding-top: 30px;
+    padding-left: 20px;
+    color: orange;
+}
+.blog-header{
+    font-size: 45px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+  }
+  
+.blog-ad {
+    width: 300px; 
+    margin-right: 20px; 
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top; /
+  }
+  
+  
+  .blog-ad img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .blog-ad-text {
+    padding: 20px;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #333;
+  }
+  
+  .blog-ad-btn {
+    display: inline-block;
+    color: orange;
+    text-decoration: none;
+    margin-top: 20px;
+
+  }
+  
+  .blog-ad-btn:hover {
+    text-decoration: underline;
+  }
+  .journey{
+    min-height: 125px;
+    width: 100%;
+    background: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+  }
+  .journey h2{
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  .journey button{
+    height: 45px;
+    width: 150px;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 18px;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  .footer{
+    font-family: "Nunito", sans-serif;
+    background-color: rgb(247, 244, 244);
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #777;
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+  .footer-about{
+    width: 400px;
+    padding: 10px;
+  }
+  .socials>ul>li{
+    background: grey;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .handles{
+    display: flex;
+  }
+  .handles>li{
+    margin-right: 5px;
+  }
+  footer h3{
+    margin-bottom: 20px;
+  }
+  .footer-links{
+    margin-bottom: 8px;
+  }
+
+  /*//////////////contact page///////////////////*/
+.contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-container{
+    display: flex;
+    width: 90%;
+    height: 90%;
+}
+.location{
+    width: 30%;
+    height: 90%;
+}
+.detail-1{
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+.svg{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location-text{
+    margin-left: 20px;
+    color: #000;
+    font-size: 18px;
+}
+.location-text p{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.contact-form {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*////login*/
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(50% - 10px); 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="submit"] {
+    width: 100%;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 200px;
+}
+.form-group input[type="submit"] {
+    height: 40px;
+    width: 150px;
+    background: orange;
+    color: #fff;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ .formTitle {
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: orangered;
+  }
+  .error {
+    color: red;
+  }
+  .switch-form {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .create{
+    color: blue;
+    text-decoration: underline;
+  }
+  .checkout {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.row > div {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.row > div:last-child {
+    margin-right: 0;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+@media screen and (min-width: 600px) {
+    .row > div {
+        width: calc(50% - 5px);
+    }
+}
+.cart {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+.remove-btn {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.remove-btn:hover {
+    background-color: #c82333;
+}
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+.trips-page{
+    min-height: 100vh;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+    .remove-btn {
+        font-size: 12px;
+    }
+}
